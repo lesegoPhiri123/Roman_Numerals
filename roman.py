@@ -6,20 +6,20 @@ def int_to_roman(num):
         5: "V", 4: "IV", 1: "I"
     }
     
-#     # Initialize an empty string to store the Roman numeral
-#     roman = ""
+    # Initialize an empty string to store the Roman numeral
+    roman = ""
     
-#     # Iterate over the dictionary in descending order of values
-#     for value in sorted(SymbolandValue.keys(), reverse=True):
-#         # Determine how many times the Roman numeral can fit into the number
-#         while num >= value:
-#             # Append the corresponding Roman numeral to the result
-#             roman += SymbolandValue[value]
-#             # Subtract the value from the number
-#             num -= value
+    # Iterate over the dictionary in descending order of values
+    for value in sorted(SymbolandValue.keys(), reverse=True):
+        # Determine how many times the Roman numeral can fit into the number
+        while num >= value:
+            # Append the corresponding Roman numeral to the result
+            roman += SymbolandValue[value]
+            # Subtract the value from the number
+            num -= value
     
-#     return roman
+    return roman
 
-# # Example usage
-# num = 5
-# print(f"The Roman numeral for {num} is {int_to_roman(num)}.")
+# Example usage
+num = 5
+print(f"The Roman numeral for {num} is {int_to_roman(num)}.")
